@@ -1,130 +1,120 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
-
-body{
-    background-image: url('img/bg.jpg');
+body {
+    background-image: url('img/bg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     /*background-image: linear-gradient(to left, white, #c013de) !important;*/
 }
-.neon{
+
+.neon {
     font-family: 'Monoton', cursive;
-    color:#ff7f2e;
+    color: #ff7f2e;
     text-shadow: 0 0 100px #ff7f2e;
 }
 
-
-
-@keyframes neonImg{
-
-    from{
+@keyframes neonImg {
+    from {
         filter: drop-shadow(0 0 0 var(--cor--neonImg));
     }
-    to{
-        filter:drop-shadow(0 0 30px var(--cor--neonImg));
+    to {
+        filter: drop-shadow(0 0 30px var(--cor--neonImg));
     }
 }
 
-img, hr, .neon{
+img,
+hr,
+.neon {
     animation: neonImg 3s alternate infinite ease-in-out;
-    --cor--neonImg:#ff7f2e;
-    --cor--neonImg:#c013de;
+    --cor--neonImg: #ff7f2e;
+    --cor--neonImg: #c013de;
 }
 
-hr{
+hr {
     color: #ff7f2e;
     background-color: #ff7f2e;
     height: 4px;
-  }
-
-input[type=text]{
-background-color: transparent;
-outline: none;
--webkit-box-shadow: none;
--moz-box-shadow: none;
-box-shadow: none;
-width:5px;
-cursor:default;
-    
 }
 
-input[type=text]:focus{
+input[type=text] {
+    background-color: transparent;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 5px;
+    cursor: default;
+}
+
+input[type=text]:focus {
     background-color: transparent;
     border-color: whitesmoke;
 }
 
 ::-webkit-input-placeholder {
     color: #fff;
- }
-  
- :-moz-placeholder { /* Firefox 18- */
-    color: #fff;  
- }
-  
- ::-moz-placeholder {  /* Firefox 19+ */
-    color: #fff;  
- }
-  
- :-ms-input-placeholder {  
-    color: #fff;  
- }
+}
 
-.wrapper{
-    color:#fff;
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+.wrapper {
+    color: #fff;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
 
-fieldset 
-	{
-        
-		border: 1px solid #ddd !important;
-		margin: 0;       
-		position: relative;
-		border-radius:4px;
-        padding-left:50px!important;
-        padding-right:50px!important;
-        box-shadow:
-        0 0 0.1vw 0.4vw #fff7f7,
-        0 0 0.4vw 0.6vw #d83ef3,
-        0 0  .4vw 0.4vw #c013de,
+fieldset {
+    border: 1px solid #ddd !important;
+    margin: 0;
+    position: relative;
+    border-radius: 4px;
+    padding-left: 50px!important;
+    padding-right: 50px!important;
+    box-shadow: 0 0 0.1vw 0.4vw #fff7f7, 0 0 0.4vw 0.6vw #d83ef3, 0 0 .4vw 0.4vw #c013de, inset 0 0 1.5vw 0.4vw #c013de, inset 0 0 0.4vw 0.2vw #d83ef3, inset 0 0 0.5vw 0.2vw #fff7f7;
+}
 
-        inset 0 0 1.5vw 0.4vw #c013de,
-        inset 0 0 0.4vw 0.2vw #d83ef3,
-        inset 0 0 0.5vw 0.2vw #fff7f7;
-	}	
-	
-		legend
-		{   
-            text-align: center;
-			margin-bottom: 0px;  
-			border: 1px solid #ddd;
-			border-radius: 4px; 
-            padding: 5px 5px 5px 10px; 
-            background-color: #ff7f2e;
-            border-color: #ff7f2e;
-            animation: neonImg 3s alternate infinite ease-in-out;
-            --cor--neonImg:#ff7f2e;
-            
-           
-        }
-        
-.fontPlanos{
-    font-family: "Montserrat",sans-serif;
+legend {
+    text-align: center;
+    margin-bottom: 0px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 5px 5px 10px;
+    background-color: #ff7f2e;
+    border-color: #ff7f2e;
+    animation: neonImg 3s alternate infinite ease-in-out;
+    --cor--neonImg: #ff7f2e;
+}
+
+.fontPlanos {
+    font-family: "Montserrat", sans-serif;
     font-size: 35px;
     font-weight: 500;
 }
-.mb{
+
+.mb {
     font-size: 25px;
     font-weight: 500;
 }
 
-.taxaZero{
-    font-family: "Montserrat",sans-serif;
+.taxaZero {
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 500;
 }
-.mais{
+
+.mais {
     font-weight: bold;
     font-size: 30px;
 }
